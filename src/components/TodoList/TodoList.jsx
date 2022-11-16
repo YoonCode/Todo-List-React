@@ -42,7 +42,6 @@ export default function TodoList({ filter }) {
 }
 
 function readTodosFromLocalStorage() {
-  console.log('readTodosFromLocalStorage')
   const todos = localStorage.getItem('todos')
   return todos ? JSON.parse(todos) : []
 }
